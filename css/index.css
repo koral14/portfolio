@@ -245,11 +245,7 @@ footer a img {
     background-color: #13313b;
   }
 
-.heart {
-    background-color: transparent;
-}
-
-img {
+/* img {
     -webkit-mask-image: linear-gradient(45deg,#000 25%,rgba(0,0,0,.2) 50%,#000 75%);
     mask-image: linear-gradient(45deg,#000 25%,rgba(0,0,0,.2) 50%,#000 75%);
     -webkit-mask-size: 800%;
@@ -263,7 +259,7 @@ img:hover {
     -webkit-mask-position: 120%;
     mask-position: 120%;
     opacity: 1;
-}
+} */
 
 .button-send {
     text-align: right;
