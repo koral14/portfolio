@@ -245,7 +245,7 @@ footer a img {
     background-color: #13313b;
   }
 
-/* img {
+img {
     -webkit-mask-image: linear-gradient(45deg,#000 25%,rgba(0,0,0,.2) 50%,#000 75%);
     mask-image: linear-gradient(45deg,#000 25%,rgba(0,0,0,.2) 50%,#000 75%);
     -webkit-mask-size: 800%;
@@ -259,7 +259,7 @@ img:hover {
     -webkit-mask-position: 120%;
     mask-position: 120%;
     opacity: 1;
-} */
+}
 
 .button-send {
     text-align: right;
@@ -284,52 +284,6 @@ img:hover {
 }
 
 /* --------------------------MEDIA QUERIES------------------------------------------- */
-@media only screen and (min-width: 330px) and (max-width: 769px) {
-    body {
-        width: 100%;
-        background-color: white;
-        line-height: 16px;
-        text-align: justify;
-        margin-top: 60px;
-    }
-
-    .img-background {
-        display: none;
-        text-align: center;
-    }
-
-    header{
-        height: 43px;
-        position: fixed;
-    }
-    section h2 {
-        font-size: 18px;
-    }
-    header img {
-        display: none;
-    }
-    .main-nav {
-        height: 45px;
-        margin-top: -15px;
-        width: 90%;
-        min-width: 280px;
-    }
-    .main-nav li {
-        height: 8px;
-        width: 55px;
-        font-size: 9px;
-        padding: 5px;
-    }
-        
-    footer p {
-        font-size: 12px;
-        margin-top: 23px;
-        text-align: left;
-    }
-    .icons {
-        margin-right: 0px;
-    }
-}
 
 @media only screen and (min-width: 330px) and (max-width:1024px) {
     body {
