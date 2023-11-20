@@ -4,9 +4,9 @@ var dateAndTime = today.getMonth() + "/" + today.getDate() + "/" + today.getFull
 const thisYear = today.getFullYear();
 const thisHour = today.getHours();
 // select the <footer> element from the DOM and store it in a variable
-const footer = document.querySelector('footer');
-const copyright = document.createElement('p');
-copyright.innerHTML = `&copy; Olga Musteata ${thisYear}`;
+// const footer = document.querySelector('footer');
+// const copyright = document.createElement('p');
+// copyright.innerHTML = `&copy; Olga Musteata ${thisYear}`;
 // append the copyright element to the footer
 footer.appendChild(copyright);
 // Add Skills Section
