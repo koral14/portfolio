@@ -1,29 +1,29 @@
 //  Create a new date object
-var today = new Date();
-var dateAndTime = today.getMonth() + "/" + today.getDate() + "/" + today.getFullYear() + ", " + today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds ();
-const thisYear = today.getFullYear();
-const thisHour = today.getHours();
-// select the <footer> element from the DOM and store it in a variable
-const footer = document.querySelector('footer');
-const copyright = document.createElement('p');
-copyright.innerHTML = `&copy; Olga Musteata ${thisYear}`;
-// append the copyright element to the footer
-footer.appendChild(copyright);
-// Add Skills Section
-const skills = ["React", "Node.js", "Express JS", "JavaScript", "CSS", "PHP", "Visual Basic", "Python", "Access", "SQL", "50WPM"];
-// select the #skills section by id
-const skillsSection = document.getElementById("skills");
-// query the skillsSection to find the <ul> element
-const skillsList = skillsSection.querySelector('ul');
-// Create a for loop to iterate over skills array
-for (let i = 0; i < skills.length; i++) {
-    let skill = document.createElement('li');
-    skill.innerHTML = skills[i];
+// var today = new Date();
+// var dateAndTime = today.getMonth() + "/" + today.getDate() + "/" + today.getFullYear() + ", " + today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds ();
+// const thisYear = today.getFullYear();
+// const thisHour = today.getHours();
+// // select the <footer> element from the DOM and store it in a variable
+// const footer = document.querySelector('footer');
+// const copyright = document.createElement('p');
+// copyright.innerHTML = `&copy; Olga Musteata ${thisYear}`;
+// // append the copyright element to the footer
+// footer.appendChild(copyright);
+// // Add Skills Section
+// const skills = ["React", "Node.js", "Express JS", "JavaScript", "CSS", "PHP", "Visual Basic", "Python", "Access", "SQL", "50WPM"];
+// // select the #skills section by id
+// const skillsSection = document.getElementById("skills");
+// // query the skillsSection to find the <ul> element
+// const skillsList = skillsSection.querySelector('ul');
+// // Create a for loop to iterate over skills array
+// for (let i = 0; i < skills.length; i++) {
+//     let skill = document.createElement('li');
+//     skill.innerHTML = skills[i];
     // skillsList.appendChild(skill);
-}
+// }
 
 // target the form and use an event listener to listen for form submit
-const messageForm = document.getElementsByName('leave_message');
+// const messageForm = document.getElementsByName('leave_message');
 
 // messageForm[0].addEventListener('submit', (event) => {
 //     event.preventDefault();
@@ -71,10 +71,10 @@ const messageForm = document.getElementsByName('leave_message');
 //     newMessage.appendChild(editButton);
 //     const title_messages = document.getElementById('title_h2');
     // remove button
-    const removeButton = document.createElement('button');
-    removeButton.innerText = 'remove';
-    removeButton.type = "button";
-    removeButton.id = 'removeButton2';
+    // const removeButton = document.createElement('button');
+    // removeButton.innerText = 'remove';
+    // removeButton.type = "button";
+    // removeButton.id = 'removeButton2';
     // removeButton.addEventListener('click', () => {
     //     const entry = removeButton.parentNode;
     //     entry.remove();
@@ -93,12 +93,12 @@ const messageForm = document.getElementsByName('leave_message');
 // }
 // );
 
-fetch('https://api.github.com/users/koral14/repos')
-    .then(response => response.json())
-    .then(data => generateRepos(data))
-    .catch(error => console.log('Looks like there was a problem!!!', error))
+// fetch('https://api.github.com/users/koral14/repos')
+//     .then(response => response.json())
+//     .then(data => generateRepos(data))
+//     .catch(error => console.log('Looks like there was a problem!!!', error))
 
-function generateRepos(data) {
+// function generateRepos(data) {
     // var projectSection = document.getElementById('projects');
     // var projectList = projectSection.querySelector('ul');
     // for (let i=0; i < data.length; i++) {
@@ -110,15 +110,15 @@ function generateRepos(data) {
     //     `;
     //     projectList.appendChild(project);
     // }
-}
+// }
 
 // extracts date from template: 2022-08-20T02:28:51Z
-function getDate1(date_and_time) {
-    var arrayDateAndTime = date_and_time.split('T');
-    var arrayDateSplitted = arrayDateAndTime[0].split('-');
-    year = arrayDateSplitted[0];
-    month = arrayDateSplitted[1];
-    day = arrayDateSplitted[2];
-    var newDate = day + '/' + month + '/' + year;
-    return newDate;
-}
+// function getDate1(date_and_time) {
+//     var arrayDateAndTime = date_and_time.split('T');
+//     var arrayDateSplitted = arrayDateAndTime[0].split('-');
+//     year = arrayDateSplitted[0];
+//     month = arrayDateSplitted[1];
+//     day = arrayDateSplitted[2];
+//     var newDate = day + '/' + month + '/' + year;
+//     return newDate;
+// }

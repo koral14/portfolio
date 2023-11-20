@@ -107,9 +107,6 @@ h2 {
 }
 
 .container-experience a:hover {
-    background-color: #13313b;
-    color: white;
-    fill: white;
     padding: 20px;
 }
 
@@ -341,7 +338,7 @@ img:hover {
     }
 
     .img-background {
-        background-image: none;
+        /* background-image: none; */
         padding: 10px;
     }
 
