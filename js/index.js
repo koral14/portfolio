@@ -10,7 +10,7 @@ copyright.innerHTML = `&copy; Olga Musteata ${thisYear}`;
 // append the copyright element to the footer
 footer.appendChild(copyright);
 // Add Skills Section
-const skills = ["JavaScript", "CSS", "PHP", "Visual Basic", "Python", "Access", "SQL", "50WPM"];
+const skills = ["React", "Node.js", "Express JS", "JavaScript", "CSS", "PHP", "Visual Basic", "Python", "Access", "SQL", "50WPM"];
 // select the #skills section by id
 const skillsSection = document.getElementById("skills");
 // query the skillsSection to find the <ul> element
