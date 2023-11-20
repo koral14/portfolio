@@ -24,8 +24,8 @@ body {
     padding-bottom: 20px;
 }
 
-#personal p {
-    text-align: justify;
+#personal ul li {
+    text-align: left;
 }
 
 h2 {
@@ -288,7 +288,7 @@ img:hover {
     body {
         width: 100%;
         font-size: 2rem;
-        line-height: 45px;
+        line-height: 4rem;
         text-align: justify;
         margin-top: -40px;
     }
@@ -309,21 +309,27 @@ img:hover {
 
     .about {
         font-size: 2rem;
+        line-height: 2.9rem;
     }
 
     .container-experience a {
-        font-size: 0.9rem;
+        font-size: 2rem;
     }
 
     #skills p {
-        font-size: 0.9rem;
+        font-size: 2rem;
         padding-left: 20px;
         padding-right: 20px;
         padding-bottom: 20px;
     }
 
+    .personal ul li {
+        background-color: red;
+        font-size: 1rem;
+    }
+
     h2 {
-        font-size: 2rem;
+        font-size: 2.5rem;
     }
 
     .profile-pic {
