@@ -38,20 +38,20 @@ h2 {
 
 .my-name {
     padding-top: 5px; 
-    font-size: 18px;
+    font-size: 22px;
     color: whitesmoke;
     padding-left: 10px;
     font-family: 'Lucida Sans';
 }
 
 .buttons {
-    width: 60vw;
+    width: 40vw;
     text-align: right;
 }
 
 .buttons li {
     padding: 5px 5px;
-    font-size: 18px;
+    font-size: 19px;
     width: 85px;
     display: inline-block;
     margin: -1.2em 0.6em;
@@ -65,7 +65,7 @@ h2 {
 }
 .buttons li:hover {
     background-color: #13313b;
-    font-size: 19px;
+    /* font-size: 19px; */
 }
 
 h2 {
@@ -153,23 +153,17 @@ section {
     padding-bottom: 20px;
 }
 .b1 {
-    background-color: lightsteelblue;
+    background-color: transparent;
     border: none;
-    border-radius: 5px;
-    color: brown;
-    padding: 10px 15px;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 18px;
-    transition-duration: 0.4s;
 }
-.b1:hover {
-    background-color: #05668D;
-    color: white;
-    box-shadow: 5px 7px 7px 2px rgba(0,0,0,0.5), 
-                5px 1px 1px rgba(0,0,0,0.3),
-                1px 1px 1px rgba(0,0,0,0.3),
-                1px 1px 1px rgba(0,0,0,0.3);
+.b1 svg {
+    width: 30px;
+    height: 30px;
+}
+.b1 svg:hover {
+    fill: green;
+    width: 40px;
+    height: 40px;
 }
 #messages h2 {
     margin-top: 50px;
@@ -204,8 +198,7 @@ section {
                 5px 8px 8px rgba(0,0,0,0.3),
                 5px 10px 6px rgba(0,0,0,0.3);
     margin-bottom: 20px;
-    width: 40%;
-    height: 330px;
+    width: 50%;
     padding-left: 30px;
     background-image: url(../images/grid.png);
 }
@@ -217,8 +210,6 @@ section {
     background-image: none;
 }
 #message .b1 {
-    padding: 8px;
-    font-size: 14px;
     cursor: pointer;
 }
 #messages .b1:hover {
@@ -284,16 +275,16 @@ footer a img {
     margin-right: 20px;
 }
 .icon1:hover {
-    width: 15px;
-    height: 15px;
+    width: 23px;
+    height: 23px;
 }
 .icon2:hover {
-    width: 15px;
-    height: 15px;
+    width: 23px;
+    height: 23px;
 }
 .icon3:hover {
-    width: 15px;
-    height: 15px;
+    width: 23px;
+    height: 23px;
 }
 
 .right {
@@ -382,6 +373,10 @@ img:hover {
     opacity: 1;
 }
 
+.button-send {
+    text-align: right;
+}
+
 /* --------------------------MEDIA QUERIES------------------------------------------- */
 @media only screen and (min-width: 120px) and (max-width: 469px) {
     body {
@@ -457,13 +452,13 @@ img:hover {
     }
     #message {
         display: block;
-        width: 90%;
-        height: 330px;
+        /* width: 90%;
+        height: 330px; */
         padding: 10px;
         margin-bottom: 60px;
     }
     #message textarea {
-        width: 90%;
+        /* width: 90%; */
         background-color: white;
         margin-bottom: 10px;
     }
@@ -549,12 +544,12 @@ img:hover {
         grid-gap: 25px;
     }
     #message {
-        width: 80%;
-        height: 330px;
+        /* width: 80%;
+        height: 330px; */
     }
     #message textarea {
-        width: 80%;
-        margin-bottom: 10px;
+        /* width: 80%;
+        margin-bottom: 10px; */
     }
     #message .b1 {
         margin-bottom: 100px;
@@ -623,8 +618,8 @@ img:hover {
         font-size: 16px;
     }
     #message {
-        width: 60%;
-        height: 340px;
+        /* width: 60%;
+        height: 340px; */
         padding-left: 20px;
     }
     #message textarea {
@@ -646,9 +641,10 @@ img:hover {
 @media only screen and (min-width: 1024px) and (max-width:1330px) {
     .profile-pic {
         width: 20vw;
+        height: 100%;
     }
     #message {
-        width: 50%;
+        width: 100%;
     }
     .split-right {
         grid-template-columns: repeat(1, 1fr);
