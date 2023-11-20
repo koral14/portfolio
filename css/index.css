@@ -288,7 +288,7 @@ img:hover {
 @media only screen and (min-width: 330px) and (max-width:1024px) {
     body {
         width: 100%;
-        font-size: 0.9rem;
+        font-size: 2rem;
         line-height: 45px;
         text-align: justify;
         margin-top: -40px;
@@ -309,7 +309,7 @@ img:hover {
     }
 
     .about {
-        font-size: 0.9rem;
+        font-size: 2rem;
     }
 
     .container-experience a {
@@ -320,13 +320,7 @@ img:hover {
         font-size: 0.9rem;
         padding-left: 20px;
         padding-right: 20px;
-        padding-bottom: 0px;
-    }
-
-    .b1 svg {
-        width: 50px;
-        height: 50px;
-        fill: blue;
+        padding-bottom: 20px;
     }
 
     h2 {
@@ -341,7 +335,6 @@ img:hover {
     }
 
     .img-background {
-        /* background-image: none; */
         padding: 10px;
     }
 
@@ -360,10 +353,6 @@ img:hover {
         padding-bottom: 5px;
     }
     
-    .b1 {
-        margin-top: -30px;
-        color:#B22222;
-    }
     footer {
         height: 60px;
         font-size: 25px;
