@@ -317,7 +317,7 @@ img:hover {
 
 /* --------------------------MEDIA QUERIES------------------------------------------- */
 
-@media only screen and (min-width: 330px) and (max-width:1024px) {
+@media only screen and (min-width: 330px) and (max-width:969px) {
     body {
         width: 100%;
         font-size: 1.6rem;
@@ -449,7 +449,7 @@ img:hover {
         height: 48px;
     }
 }
-@media only screen and (min-width: 1024px) and (max-width:1420px) {
+@media only screen and (min-width: 969px) and (max-width:1420px) {
     #skills ul {
         padding: 20px;
         font-size: 16px;
