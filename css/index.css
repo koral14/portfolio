@@ -71,6 +71,10 @@ h2 {
     margin-left: 20px;
 }
 
+.italic {
+    font-style: italic;
+}
+
 .buttons {
     width: 40vw;
     text-align: right;
@@ -127,7 +131,7 @@ h2 {
 }
 
 #experience img {
-    width: 80px;
+    width: 50px;
 }
 
 .container-experience li {
@@ -154,14 +158,6 @@ label {
 }
 section {
     padding-bottom: 5px;
-}
-.b1 {
-    background-color: transparent;
-    border: none;
-}
-.b1 svg {
-    width: 30px;
-    height: 30px;
 }
 
 #removeButton2 {
@@ -313,6 +309,10 @@ img:hover {
         line-height: 4rem;
         text-align: justify;
         margin-top: -40px;
+    }
+
+    #experience img {
+        width: 70px;
     }
 
     .my-name {

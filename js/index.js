@@ -1,14 +1,14 @@
 //  Create a new date object
-// var today = new Date();
-// var dateAndTime = today.getMonth() + "/" + today.getDate() + "/" + today.getFullYear() + ", " + today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds ();
-// const thisYear = today.getFullYear();
-// const thisHour = today.getHours();
+var today = new Date();
+var dateAndTime = today.getMonth() + "/" + today.getDate() + "/" + today.getFullYear() + ", " + today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds ();
+const thisYear = today.getFullYear();
+const thisHour = today.getHours();
 // // select the <footer> element from the DOM and store it in a variable
-// const footer = document.querySelector('footer');
-// const copyright = document.createElement('p');
-// copyright.innerHTML = `&copy; Olga Musteata ${thisYear}`;
-// // append the copyright element to the footer
-// footer.appendChild(copyright);
+const footer = document.querySelector('footer');
+const copyright = document.createElement('p');
+copyright.innerHTML = `&copy; Olga Musteata ${thisYear}`;
+// append the copyright element to the footer
+footer.appendChild(copyright);
 // // Add Skills Section
 // const skills = ["React", "Node.js", "Express JS", "JavaScript", "CSS", "PHP", "Visual Basic", "Python", "Access", "SQL", "50WPM"];
 // // select the #skills section by id
@@ -113,12 +113,12 @@
 // }
 
 // extracts date from template: 2022-08-20T02:28:51Z
-// function getDate1(date_and_time) {
-//     var arrayDateAndTime = date_and_time.split('T');
-//     var arrayDateSplitted = arrayDateAndTime[0].split('-');
-//     year = arrayDateSplitted[0];
-//     month = arrayDateSplitted[1];
-//     day = arrayDateSplitted[2];
-//     var newDate = day + '/' + month + '/' + year;
-//     return newDate;
-// }
+function getDate1(date_and_time) {
+    var arrayDateAndTime = date_and_time.split('T');
+    var arrayDateSplitted = arrayDateAndTime[0].split('-');
+    year = arrayDateSplitted[0];
+    month = arrayDateSplitted[1];
+    day = arrayDateSplitted[2];
+    var newDate = day + '/' + month + '/' + year;
+    return newDate;
+}
