@@ -206,7 +206,7 @@ footer a img {
 }
 .right {
     display: grid;
-    grid-template-columns: 850px auto;
+    grid-template-columns: 60% auto;
     grid-column-gap: 0px;
     grid-row-gap: 0px;
 }
@@ -317,7 +317,7 @@ img:hover {
 
 /* --------------------------MEDIA QUERIES------------------------------------------- */
 
-@media only screen and (min-width: 330px) and (max-width:969px) {
+@media only screen and (min-width: 330px) and (max-width:998px) {
     body {
         width: 100%;
         font-size: 1.6rem;
@@ -449,7 +449,7 @@ img:hover {
         height: 48px;
     }
 }
-@media only screen and (min-width: 969px) and (max-width:1420px) {
+@media only screen and (min-width: 998px) and (max-width:1420px) {
     #skills ul {
         padding: 20px;
         font-size: 16px;
