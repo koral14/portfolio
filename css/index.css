@@ -18,8 +18,8 @@ body {
 }
 
 #skills {
-    /* text-align: center; */
     width: 100%;
+    margin-bottom: 20px;
 }
 
 #skills ul {
@@ -228,6 +228,7 @@ footer a img {
     fill: white;
     width: 40px;
     height: 30px;
+    margin-right: -50px;
   }
 
   .dropbtn svg:hover {
@@ -320,9 +321,8 @@ img:hover {
     body {
         width: 100%;
         font-size: 2rem;
-        line-height: 4rem;
+        line-height: 3rem;
         text-align: justify;
-        margin-top: -40px;
     }
 
     .dropbtn svg {
@@ -381,6 +381,7 @@ img:hover {
         width: 100%;
         padding: 5px;
         margin-left: 0px;
+        margin-right: 10px;
     }
 
     #skills ul {
@@ -392,6 +393,7 @@ img:hover {
         grid-template-rows: repeat(3, 1fr);
         grid-column-gap: 10px;
         grid-row-gap: 10px;
+        margin-bottom: 20px;
     }
 
     #skills ul li {
@@ -433,6 +435,7 @@ img:hover {
         height: 60px;
         font-size: 25px;
         padding-bottom: 10px;
+        margin-top: 30px;
     }
     .icons a svg {
         width: 50px;
