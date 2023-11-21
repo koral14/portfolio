@@ -30,6 +30,8 @@ body {
 
 h2 {
     font-family: 'Lucida Sans';
+    background-color: #9cb5be2d;
+    padding: 10px;
 }
 
 .header-right {
@@ -97,6 +99,10 @@ h2 {
 #experience h2 {
     margin-bottom: 10px;
     cursor: pointer;
+}
+
+#experience img {
+    width: 80px;
 }
 
 .container-experience li {
@@ -278,7 +284,6 @@ img:hover {
 }
 
 .container-experience li a svg {
-    /* background-color: red; */
     font-size: 40px;
 }
 
