@@ -1,27 +1,53 @@
 @import url('https://fonts.googleapis.com/css2?family=Aleo:ital,wght@0,400;1,300;1,400&family=Mukta:wght@200&family=Oleo+Script+Swash+Caps&family=Source+Serif+4:opsz@8..60&family=Syne+Mono&display=swap');
 
 body {
-    font-family: Aleo, sans-serif;
-    font-size: 18px;
+    font-family: 'Lucida Sans', sans-serif;
     line-height: 30px;
     left: 0;
     right: 0;
     margin-top: -20px;
     position: relative;
+    font-size: 1.3rem;
 }
 
-#personal {
-    margin-top: 0.2em;
-    width: 900px;
-    padding-top: 15px;
+.about {
+    font-size: 1.3rem;
+    padding-left: 20px;
+    padding-right: 20px;
+    line-height: 1.8rem;
 }
 
-#personal p {
-    text-align: justify;
+#skills {
+    text-align: center;
+    width: 100%;
+}
+
+#skills ul {
+    list-style-type: none;
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: repeat(1fr);
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+    font-size: 18px;
+    text-align: center;
+    padding-bottom: 20px;
+    font-family:'Courier New', Courier, monospace;
+}
+
+#skills ul li {
+    background-color:#e3ebed;
+    width: 120px;
+}
+
+#personal ul li {
+    text-align: left;
 }
 
 h2 {
     font-family: 'Lucida Sans';
+    background-color: #9cb5be2d;
+    padding: 10px;
 }
 
 .header-right {
@@ -32,26 +58,31 @@ h2 {
     grid-row-gap: 0px;
     background-color: #1a3843;
     padding-top: 10px;
-    height: 50px;
+    height: 65px;
     width: 100%;
 }
 
 .my-name {
     padding-top: 5px; 
-    font-size: 18px;
+    font-size: 22px;
     color: whitesmoke;
     padding-left: 10px;
     font-family: 'Lucida Sans';
+    margin-left: 20px;
+}
+
+.italic {
+    font-style: italic;
 }
 
 .buttons {
-    width: 60vw;
+    width: 40vw;
     text-align: right;
 }
 
 .buttons li {
     padding: 5px 5px;
-    font-size: 18px;
+    font-size: 20px;
     width: 85px;
     display: inline-block;
     margin: -1.2em 0.6em;
@@ -59,13 +90,22 @@ h2 {
     font-family: 'Lucida Sans';
 }
 
+.buttons .dropdown img {
+    width: 60px;
+    margin-top: -15px;
+}
+
+.buttons .dropdown img:hover {
+    width: 63px;
+}
+
+.buttons .dropdown {
+    margin-top: 0px;
+}
+
 .buttons a {
     color: whitesmoke;
     text-decoration: none;
-}
-.buttons li:hover {
-    background-color: #13313b;
-    font-size: 19px;
 }
 
 h2 {
@@ -89,185 +129,50 @@ h2 {
     margin-bottom: 10px;
     cursor: pointer;
 }
-.container-experience {
-    display: inline-flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    justify-content: left;
-    margin-left: -45px;
+
+#experience img {
+    width: 50px;
 }
+
+.container-experience li {
+    margin-bottom: 20px;
+}
+
 .container-experience a {
-    margin: 6px;
-    padding: 7px;
-    text-align: left;
-    color: #13313b;
-    font-family:'Lucida Sans';
     text-decoration: none;
+    font-size: 1.5rem;
+    color: #13313b;
 }
 
 .container-experience a:hover {
-    background-color: #13313b;
-    color: white;
-    fill: white;
+    padding: 20px;
 }
 
 .container-experience li {
     list-style-type: none;
 }
 
-.skill_grid {
-    display: grid;
-    grid-template-columns: 130px 130px 130px 130px;
-    grid-template-rows: 25px;
-    grid-gap: 15px;
-}
-#skills li {
-    list-style-type: none;
-    padding-left: 10px;
-    height: 30px;
-    color: #13313b;
-    box-shadow: 2px 2px 2px 2px rgba(0,0,0,0.5), 
-                2px 1px 1px rgba(0,0,0,0.3),
-                1px 1px 1px rgba(0,0,0,0.3),
-                1px 1px 1px rgba(0,0,0,0.3);
-}
 label {
     color: #B22222;
     font-size: 18px;
 }
-input {
-    font-size: 14px;
-    padding: 5px;
-    border: 2px groove #B22222;
-    margin-bottom: 15px;
-}
-textarea {
-    font-size: 14px;
-    width: 550px;
-    height: 70px;
-    padding: 10px 20px;
-    border: 2px groove #B22222;
-}
 section {
-    margin-left: 40px;
-    padding-bottom: 20px;
+    padding-bottom: 5px;
 }
-.b1 {
-    background-color: lightsteelblue;
-    border: none;
-    border-radius: 5px;
-    color: brown;
-    padding: 10px 15px;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 18px;
-    transition-duration: 0.4s;
-}
-.b1:hover {
-    background-color: #05668D;
-    color: white;
-    box-shadow: 5px 7px 7px 2px rgba(0,0,0,0.5), 
-                5px 1px 1px rgba(0,0,0,0.3),
-                1px 1px 1px rgba(0,0,0,0.3),
-                1px 1px 1px rgba(0,0,0,0.3);
-}
-#messages h2 {
-    margin-top: 50px;
-}
-#messages li {
-    font-family:'Lucida Sans', sans-serif;
-    list-style-type: none;
-    padding: 10px;
-    background-repeat: no-repeat;
-    margin-bottom: 20px;
-    margin-left: -50px;
-    font-size: 12px;
-}
-#messages li span {
-    color: #05668D;
-    font-size: 16px;
-}
-#messages .b1 {
-    border: none;
-    border-radius: 2px;
-    padding: 5px 5px;
-    display: inline-block;
-    font-size: 14px;
-    transition-duration: 0.4s;
-    margin: 5px;
-    cursor: pointer;
-}
-#message {
-    padding: 10px;
-    box-shadow: 5px 10px 12px 10px rgba(0,0,0,0.3), 
-                5px 5px 4px rgba(0,0,0,0.3),
-                5px 8px 8px rgba(0,0,0,0.3),
-                5px 10px 6px rgba(0,0,0,0.3);
-    margin-bottom: 20px;
-    width: 40%;
-    height: 330px;
-    padding-left: 30px;
-    background-image: url(../images/grid.png);
-}
-#message textarea {
-    width: 370px;
-    height: 380px;
-    box-shadow: none;
-    height: 45px;
-    background-image: none;
-}
-#message .b1 {
-    padding: 8px;
-    font-size: 14px;
-    cursor: pointer;
-}
-#messages .b1:hover {
-    color: white;
-    text-decoration: underline;
-}
-.grid-message {
-    display: grid;
-    grid-template-columns: 180px 180px;
-    grid-template-rows: 40px;
-    grid-gap: 25px;
-}
-.project_class {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 100px 100px;
-    grid-row-gap: 30px;
-    grid-column-gap: 100px;
-}
-.project_class li {
-    padding-left: 35px;
-    padding-top: 15px;
-    list-style-type: none;
-    font-size: 20px;
-    background-image: url(../images/github.png);
-    background-position: 0 0;
-    background-size: 30px 30px;
-    background-repeat: no-repeat;
-    border-style: groove;
-    border: 2px;
-    color: grey;
-    width: 565px;
-    font-variant: small-caps;
-    height: 55px;
-}
+
 #removeButton2 {
     display: block;
     background-color: #B22222;
     color: white;
 }
 footer {
-    background-color:#9fa8a3;
+    background-color:#1a3843;
     height: 35px;
     color: beige;
     right: 0;
     position: fixed;
     bottom: 0;
     width: 100%;
-    padding-bottom: 5px;
 }
 footer p {   
     padding-left: 10px;
@@ -280,26 +185,26 @@ footer a img {
     padding-right: 14px;
     padding-top: 8px;
 }
+
 .icons {
+    text-align: right;
     margin-right: 20px;
 }
-.icon1:hover {
-    width: 15px;
-    height: 15px;
-}
-.icon2:hover {
-    width: 15px;
-    height: 15px;
-}
-.icon3:hover {
-    width: 15px;
-    height: 15px;
-}
 
+.icons a svg {
+    padding: 5px;
+    fill: white;
+    width: 30px;
+    height: 30px;
+} 
+
+.icons a svg:hover {
+    width: 28px;
+    height: 28px;
+}
 .right {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: 1fr;
+    grid-template-columns: 850px auto;
     grid-column-gap: 0px;
     grid-row-gap: 0px;
 }
@@ -315,7 +220,6 @@ footer a img {
 .dropbtn {
     color: whitesmoke;
     text-decoration: none;
-    background-color: #1a3843;
   }
   
   /* The container <div> - needed to position the dropdown content */
@@ -328,7 +232,6 @@ footer a img {
   .dropdown-content {
     display: none;
     position: absolute;
-    background-color: #f9f9f9;
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
@@ -336,14 +239,17 @@ footer a img {
   
   /* Links inside the dropdown */
   .dropdown-content a {
-    color: black;
+    color: #86626E;
     padding: 12px 16px;
     text-decoration: none;
     display: block;
+    font-size: 18px;
+    margin-bottom: 5px;
+    background-color: #E2E4F6;
   }
   
   /* Change color of dropdown links on hover */
-  .dropdown-content a:hover {background-color: #f1f1f1}
+  .dropdown-content a:hover {background-color: #E7C8DD}
   
   /* Show the dropdown menu on hover */
   .dropdown:hover .dropdown-content {
@@ -352,19 +258,11 @@ footer a img {
   
   /* Change the background color of the dropdown button when the dropdown content is shown */
   .dropdown:hover .dropbtn {
-    padding: 5px 5px;
-    font-size: 18px;
     width: 85px;
     display: inline-block;
-    margin: -1.2em 0.6em;
     height: 22px;
     font-family: 'Lucida Sans';
-    background-color: #13313b;
   }
-
-.heart {
-    background-color: transparent;
-}
 
 img {
     -webkit-mask-image: linear-gradient(45deg,#000 25%,rgba(0,0,0,.2) 50%,#000 75%);
@@ -382,215 +280,123 @@ img:hover {
     opacity: 1;
 }
 
-/* --------------------------MEDIA QUERIES------------------------------------------- */
-@media only screen and (min-width: 120px) and (max-width: 469px) {
-    body {
-        width: 100%;
-        background-color: white;
-        font-size: 14px;
-        line-height: 16px;
-        text-align: justify;
-        margin-top: 60px;
-    }
-
-    .buttons {display:none}
-
-    .split-right {
-        grid-template-columns: repeat(1, 1fr);
-    }
-
-    header{
-        height: 43px;
-        position: fixed;
-    }
-    section h2 {
-        font-size: 18px;
-    }
-    header img {
-        display: none;
-    }
-    .main-nav {
-        height: 45px;
-        margin-top: -15px;
-        width: 90%;
-        min-width: 280px;
-    }
-    .main-nav li {
-        height: 8px;
-        width: 55px;
-        font-size: 9px;
-        padding: 5px;
-    }
-    .skill_grid {
-        grid-template-columns: 90px 90px;
-        grid-template-rows: 30px 30px 30px 30px;
-        grid-column-gap: 30px;
-        margin-left: 40px;
-    }
-    .skill_grid li {
-        width: 90px;
-        height: 20px;
-        padding-top: 15px;
-    }
-    label {
-        font-size: 16px;
-    }
-    .grid-message {
-        grid-template-columns: 1fr;
-        grid-template-rows: 40px 40px;
-        grid-gap: 25px;
-    }
-    section {
-        margin-left: 5px;
-        padding-bottom: 2px;
-    }
-    section li {
-        margin-left: -30px;
-    }
-    #personal {
-        padding-top: 20px;
-        padding-left: 10px;
-        margin-top: 10px;
-    }
-    .img-background {
-        background-image: none;
-    }
-    #message {
-        display: block;
-        width: 90%;
-        height: 330px;
-        padding: 10px;
-        margin-bottom: 60px;
-    }
-    #message textarea {
-        width: 90%;
-        background-color: white;
-        margin-bottom: 10px;
-    }
-    #message label {
-        font-size: 12px;
-    }
-    #messages li {
-        text-align: left;
-    }
-    #message .b1 {
-        font-size: 12px;
-        padding: 8px;
-        color:darkslategrey;
-    }
-    .project_class {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-    }
-    .project_class li {
-        font-size: 13px;
-        background-size: 15px 15px;
-        text-align: left;
-    }
-    footer p {
-        font-size: 12px;
-        margin-top: 23px;
-        text-align: left;
-    }
-    .icons {
-        margin-right: 0px;
-    }
+.button-send {
+    text-align: right;
 }
 
-@media only screen and (min-width: 469px) and (max-width:769px) {
-    .profile-pic {
-        width: 20vw;
-    }
-    .buttons {display:none}
-    body {
-        width: 100%;
-        background-color: ivory;
-        font-size: 14px;
-        line-height: 20px;
-        text-align: justify;
-        margin-left: -20px;
-        margin-top: 65px;
-    }
-    .split-right {
-        grid-template-columns: repeat(1, 1fr);
-    }
-    .main-nav {
-        width: 62%;
-        height: 70px;
-        margin-top: -40px;
-    }
-    .main-nav li {
-        height: 15px;
-        width: 70px;
-        font-size: 11px;
-        padding: 5px;
-    }
-    #personal {
-        width: 85%;
-        margin-top: 10px;
-    }
-    #personal p {
-        margin-right: -20px;
-    }
-    h2 {
-        font-size: 20px;
-    }
-    .skill_grid {
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: 20px 20px 20px;
-    }
-    label {
-        font-size: 14px;
-    }
-    .grid-message {
-        grid-template-columns: 1fr;
-        grid-template-rows: 40px 40px;
-        grid-gap: 25px;
-    }
-    #message {
-        width: 80%;
-        height: 330px;
-    }
-    #message textarea {
-        width: 80%;
-        margin-bottom: 10px;
-    }
-    #message .b1 {
-        margin-bottom: 100px;
-    }
-   
-    #editButton1 {
-        margin-right: 10px;
-        position: relative;
-    }
-    .project_class {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-    }
-    .project_class li {
-        font-size: 14px;
-        text-align: left;
-        background-size: 20px 20px;
-    }
-    footer p {
-        padding-left: 15px;
-    }
-}  
+.profile-pic img {
+    border-bottom: 1rem solid #9cb5be2d;
+}
 
-@media only screen and (min-width: 769px) and (max-width:1024px) {
-    .profile-pic {
-        width: 20vw;
-    }
-    .buttons {display:none}
+.profile-pic {
+    height: 380px;
+}
+.profile-pic img {
+    width: 350px;
+    margin-left: 20px;
+}
+
+.container-experience li a svg {
+    font-size: 40px;
+}
+
+/* --------------------------MEDIA QUERIES------------------------------------------- */
+
+@media only screen and (min-width: 330px) and (max-width:1024px) {
     body {
         width: 100%;
-        font-size: 16px;
-        line-height: 25px;
+        font-size: 2rem;
+        line-height: 4rem;
         text-align: justify;
         margin-top: -40px;
     }
+
+    #experience img {
+        width: 70px;
+    }
+
+    .my-name {
+        padding-top: 15px; 
+        font-size: 45px;
+    }
+
+    .header-right {
+        height: 120px;
+    }
+
+    .buttons {
+        margin-top: 50px;
+        margin-right: 100px;
+    }
+    .buttons .dropdown img {
+        width: 110px;
+    }
+
+    .buttons .dropdown img:hover {
+        width: 120px;
+    }
+
+    .right {
+        grid-template-columns: 400px auto;
+    }
+
+    .about {
+        font-size: 2rem;
+        line-height: 2.9rem;
+    }
+
+    .container-experience a {
+        font-size: 1.2rem;
+    }
+
+    /* Dropdown Content (Hidden by Default) */
+  .dropdown-content {
+    min-width: 200px;
+  }
+  
+  /* Links inside the dropdown */
+  .dropdown-content a {
+    font-size: 24px;
+  }
+
+    #skills {
+        width: 100%;
+        padding: 5px;
+        margin-left: 0px;
+    }
+
+    #skills ul {
+        padding: 20px;
+        font-size: 16px;
+        width: 90%;
+        padding: 5px;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        grid-column-gap: 10px;
+        grid-row-gap: 10px;
+    }
+
+    #skills ul li {
+        padding: 5px;
+        width: 220px;
+    }
+
+    h2 {
+        font-size: 2.5rem;
+    }
+
+    .profile-pic {
+        height: 450px;
+    }
+    .profile-pic img {
+        width: 400px;
+        margin-top: 70px;
+    }
+
+    .img-background {
+        padding: 10px;
+    }
+    
     .split-right {
         grid-template-columns: repeat(1, 1fr);
     }
@@ -601,208 +407,21 @@ img:hover {
         margin-top: -50px;
     }
     section {
-        margin-left: 10px;
-        padding-bottom: 5px;
+        padding-bottom: 3px;
     }
-    #personal {
-        width: 90%;
-        padding-top: 20px;
-        padding-left: 10px;
-    }
-    .skill_grid {
-        grid-template-columns: 130px 130px 130px 130px;
-        grid-template-rows: 25px 25px;
-    }
-    .project_class {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-    }
-    .project_class li {
-        margin-left: 10px;
-        font-size: 16px;
-    }
-    #message {
-        width: 60%;
-        height: 340px;
-        padding-left: 20px;
-    }
-    #message textarea {
-        height: 80px;
-        width: 360px;
-    }
-    .b1 {
-        margin-top: -30px;
-        color:#B22222;
-        margin-bottom: 2em;
-    }
+    
     footer {
-        height: 25px;
-        font-size: 14px;
+        height: 60px;
+        font-size: 25px;
         padding-bottom: 10px;
     }
-}
-
-@media only screen and (min-width: 1024px) and (max-width:1330px) {
-    .profile-pic {
-        width: 20vw;
-    }
-    #message {
-        width: 50%;
-    }
-    .split-right {
-        grid-template-columns: repeat(1, 1fr);
-    }
-    #message .b1 {
-        position: absolute;
-        margin-top: -20px;
-    }
-    .project_class {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-    }
-    .project_class li {
-        margin-left: -20px;
-        background-color: inherit;
-        line-height: 20px;
-        font-size: 18px;
-    }
-}
-
-@media only screen and (-webkit-min-device-pixel-ratio: 2) {
-    .profile-pic {
-        width: 20vw;
-    }
-    body {
-        width: 100%;
-        background-color: white;
-        font-size: 14px;
-        line-height: 16px;
-        text-align: justify;
-        margin-top: 80px;
-    }
-    .split-right {
-        grid-template-columns: repeat(1, 1fr);
-    }
-    section h2 {
-        font-size: 18px;
-    }
-    header img {
-        display: none;
-    }
-    .main-nav {
-        height: 45px;
-        margin-top: -15px;
-        width: 90%;
-        min-width: 280px;
-        margin-top: 1px;
-    }
-    .main-nav li {
-        height: 20px;
-        width: 95px;
-        font-size: 14px;
-        padding: 5px;
-    }
-    .skill_grid {
-        grid-template-columns: 220px 220px;
-        grid-template-rows: 30px 30px 30px 30px;
-        grid-column-gap: 30px;
-        margin-left: 40px;
-        width: 500px;
-    }
-    .skill_grid li {
-        width: 220px;
-        height: 30px;
-        padding-top: 5px;
-        font-size: 20px;
-    }
-    label {
-        font-size: 16px;
-    }
-    .grid-message {
-        grid-template-columns: 1fr;
-        grid-template-rows: 40px 40px;
-        grid-gap: 25px;
-    }
-    section {
-        margin-left: 5px;
-        padding-bottom: 2px;
-    }
-    section li {
-        margin-left: -30px;
-    }
-    #personal {
-        width: 90%;
-        padding-top: 20px;
-        padding-left: 10px;
-        margin-top: 10px;
-    }
-    .img-background {
-        background-image: none;
-    }
-    #message {
-        display: block;
-        width: 90%;
-        height: 350px;
-        padding: 10px;
-        margin-bottom: 80px;
-    }
-    #message textarea {
-        width: 70%;
-        background-color: white;
-        margin-bottom: 10px;
-    }
-    #message label {
-        font-size: 12px;
-    }
-    #messages li {
-        text-align: left;
-    }
-    #message .b1 {
-        font-size: 12px;
-        padding: 8px;
-        color:darkslategrey;
-    }
-    .project_class {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-    }
-    .project_class li {
-        font-size: 10px;
-        text-align: left;
-        width: 100%;
-        margin-top: 5px;
-        margin-bottom: 40px;
-    }
-    footer {
-        height: 30px;
-    }
-    footer p {
-        font-size: 25px;
-        margin-top: 15px;
-        text-align: left;
-    }
-    .icons {
-        margin-right: 0px;
-    }
-}
-
-@media print {
-    #message {
-        display: none;
-    }
-    .main-nav li {
-        display: none;
-    }
-    .project_class {
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: 100px 100px 100px 100px 100px 100px 100px;
-    }
-    .skill_grid {
-        grid-template-columns: 130px 130px 130px 130px;
-        grid-template-rows: 25px 25px;
+    .icons a svg {
+        width: 50px;
+        height: 50px;
+    } 
+    
+    .icons a svg:hover {
+        width: 48px;
+        height: 48px;
     }
 }
