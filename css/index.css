@@ -17,11 +17,27 @@ body {
     line-height: 1.8rem;
 }
 
-#skills p {
-    font-size: 1.3rem;
-    padding-left: 20px;
-    padding-right: 20px;
+#skills {
+    text-align: center;
+    width: 100%;
+}
+
+#skills ul {
+    list-style-type: none;
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: repeat(1fr);
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+    font-size: 18px;
+    text-align: center;
     padding-bottom: 20px;
+    font-family:'Courier New', Courier, monospace;
+}
+
+#skills ul li {
+    background-color:#e3ebed;
+    width: 120px;
 }
 
 #personal ul li {
@@ -42,7 +58,7 @@ h2 {
     grid-row-gap: 0px;
     background-color: #1a3843;
     padding-top: 10px;
-    height: 50px;
+    height: 65px;
     width: 100%;
 }
 
@@ -58,12 +74,11 @@ h2 {
 .buttons {
     width: 40vw;
     text-align: right;
-    margin-top: 10px;
 }
 
 .buttons li {
     padding: 5px 5px;
-    font-size: 22px;
+    font-size: 20px;
     width: 85px;
     display: inline-block;
     margin: -1.2em 0.6em;
@@ -71,12 +86,22 @@ h2 {
     font-family: 'Lucida Sans';
 }
 
+.buttons .dropdown img {
+    width: 60px;
+    margin-top: -15px;
+}
+
+.buttons .dropdown img:hover {
+    width: 63px;
+}
+
+.buttons .dropdown {
+    margin-top: 0px;
+}
+
 .buttons a {
     color: whitesmoke;
     text-decoration: none;
-}
-.buttons li:hover {
-    background-color: #13313b;
 }
 
 h2 {
@@ -128,7 +153,7 @@ label {
     font-size: 18px;
 }
 section {
-    padding-bottom: 10px;
+    padding-bottom: 5px;
 }
 .b1 {
     background-color: transparent;
@@ -137,11 +162,6 @@ section {
 .b1 svg {
     width: 30px;
     height: 30px;
-}
-.b1 svg:hover {
-    fill: green;
-    width: 40px;
-    height: 40px;
 }
 
 #removeButton2 {
@@ -204,7 +224,6 @@ footer a img {
 .dropbtn {
     color: whitesmoke;
     text-decoration: none;
-    background-color: #1a3843;
   }
   
   /* The container <div> - needed to position the dropdown content */
@@ -217,7 +236,6 @@ footer a img {
   .dropdown-content {
     display: none;
     position: absolute;
-    background-color: #f9f9f9;
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
@@ -225,14 +243,17 @@ footer a img {
   
   /* Links inside the dropdown */
   .dropdown-content a {
-    color: black;
+    color: #86626E;
     padding: 12px 16px;
     text-decoration: none;
     display: block;
+    font-size: 18px;
+    margin-bottom: 5px;
+    background-color: #E2E4F6;
   }
   
   /* Change color of dropdown links on hover */
-  .dropdown-content a:hover {background-color: #f1f1f1}
+  .dropdown-content a:hover {background-color: #E7C8DD}
   
   /* Show the dropdown menu on hover */
   .dropdown:hover .dropdown-content {
@@ -241,14 +262,10 @@ footer a img {
   
   /* Change the background color of the dropdown button when the dropdown content is shown */
   .dropdown:hover .dropbtn {
-    padding: 5px 5px;
-    /* font-size: 20px; */
     width: 85px;
     display: inline-block;
-    margin: -1.2em 0.6em;
     height: 22px;
     font-family: 'Lucida Sans';
-    background-color: #13313b;
   }
 
 img {
@@ -272,7 +289,7 @@ img:hover {
 }
 
 .profile-pic img {
-    border-bottom: #91a3a9 solid 1rem;
+    border-bottom: 1rem solid #9cb5be2d;
 }
 
 .profile-pic {
@@ -304,8 +321,19 @@ img:hover {
     }
 
     .header-right {
-        grid-template-columns: repeat(1, 1fr);
-        height: 100px;
+        height: 120px;
+    }
+
+    .buttons {
+        margin-top: 50px;
+        margin-right: 100px;
+    }
+    .buttons .dropdown img {
+        width: 110px;
+    }
+
+    .buttons .dropdown img:hover {
+        width: 120px;
     }
 
     .right {
@@ -318,19 +346,39 @@ img:hover {
     }
 
     .container-experience a {
-        font-size: 2rem;
+        font-size: 1.2rem;
     }
 
-    #skills p {
-        font-size: 2rem;
-        padding-left: 20px;
-        padding-right: 20px;
-        padding-bottom: 20px;
+    /* Dropdown Content (Hidden by Default) */
+  .dropdown-content {
+    min-width: 200px;
+  }
+  
+  /* Links inside the dropdown */
+  .dropdown-content a {
+    font-size: 24px;
+  }
+
+    #skills {
+        width: 100%;
+        padding: 5px;
+        margin-left: 0px;
     }
 
-    .personal ul li {
-        background-color: red;
-        font-size: 1rem;
+    #skills ul {
+        padding: 20px;
+        font-size: 16px;
+        width: 90%;
+        padding: 5px;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        grid-column-gap: 10px;
+        grid-row-gap: 10px;
+    }
+
+    #skills ul li {
+        padding: 5px;
+        width: 220px;
     }
 
     h2 {
@@ -342,13 +390,12 @@ img:hover {
     }
     .profile-pic img {
         width: 400px;
+        margin-top: 70px;
     }
 
     .img-background {
         padding: 10px;
     }
-
-    .buttons {display:none}
     
     .split-right {
         grid-template-columns: repeat(1, 1fr);
@@ -360,7 +407,7 @@ img:hover {
         margin-top: -50px;
     }
     section {
-        padding-bottom: 5px;
+        padding-bottom: 3px;
     }
     
     footer {
