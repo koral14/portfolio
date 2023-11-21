@@ -18,7 +18,7 @@ body {
 }
 
 #skills {
-    text-align: center;
+    /* text-align: center; */
     width: 100%;
 }
 
@@ -37,7 +37,9 @@ body {
 
 #skills ul li {
     background-color:#e3ebed;
-    width: 120px;
+    width: 125px;
+    font-size: 1.5rem;
+    padding: 5px;
 }
 
 #personal ul li {
@@ -221,6 +223,16 @@ footer a img {
     color: whitesmoke;
     text-decoration: none;
   }
+
+  .dropbtn svg {
+    fill: white;
+    width: 40px;
+    height: 30px;
+  }
+
+  .dropbtn svg:hover {
+    fill: #FFC831;
+  }
   
   /* The container <div> - needed to position the dropdown content */
   .dropdown {
@@ -233,23 +245,25 @@ footer a img {
     display: none;
     position: absolute;
     min-width: 160px;
+    width: 300px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
+    margin-left: -150px;
   }
   
   /* Links inside the dropdown */
   .dropdown-content a {
-    color: #86626E;
+    color: white;
     padding: 12px 16px;
     text-decoration: none;
     display: block;
     font-size: 18px;
     margin-bottom: 5px;
-    background-color: #E2E4F6;
+    background-color: #13313b;
   }
   
   /* Change color of dropdown links on hover */
-  .dropdown-content a:hover {background-color: #E7C8DD}
+  .dropdown-content a:hover {color: #FFC831}
   
   /* Show the dropdown menu on hover */
   .dropdown:hover .dropdown-content {
@@ -311,6 +325,10 @@ img:hover {
         margin-top: -40px;
     }
 
+    .dropbtn svg {
+        width: 50px;
+        height: 40px;
+    }
     #experience img {
         width: 70px;
     }
@@ -379,6 +397,7 @@ img:hover {
     #skills ul li {
         padding: 5px;
         width: 220px;
+        font-size: 1.8rem;
     }
 
     h2 {
